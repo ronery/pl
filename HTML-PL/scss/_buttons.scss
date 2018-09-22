@@ -1,0 +1,80 @@
+@import "mixins";
+
+.btn{
+    display: inline-block;
+    text-align: center;
+    // white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 2px solid transparent;
+    padding: 5px 20px !important;
+    @include border-radius(25px); 
+    font-size: 24px !important;
+    font-family: "brandingmedium" !important;
+    transition: all .2s ease-in-out;
+    &.btn-red{
+        background-color: $bgRedButton;
+        color: $colorRedButton;
+        &:hover{
+            // background-color: $bgRedButton + 10;
+            color: $bgRedButton;
+            border-color: $bgRedButton - 10;
+        }
+    }
+    &.btn-blue{
+        background-color: $bgBlueButton;
+        color: $colorBlueButton;
+        &:hover{
+            // background-color: $bgBlueButton + 10;
+            color: $bgBlueButton;
+            border-color: $bgBlueButton;
+        }
+    }
+    &.btn-lg{
+        padding: 13px 25px 15px 25px !important;
+        font-size: 24px !important;
+    }
+    &.btn-sm{
+        padding: 2px 10px 5px 10px !important;
+        font-size: 16px !important;
+    }
+    &.btn-full{
+        width: 100%;
+        padding: 3px 10% 5px 10% !important;
+    }
+    &.btn-social{
+        border-width: .5px;
+        border-style: solid;
+        background-color: #fff;
+        font-size: 14px !important;
+        font-weight: normal;
+        position: relative;
+        padding: 12px 10px 12px 30px  !important;
+        text-transform: uppercase; 
+        &.btn-facebook{
+            border-color: #105098;
+            color: #105098;
+        }
+        &.btn-google{
+            border-color: #fd4738;
+            color: #fd4738;
+        }
+        i{
+            position: absolute;
+            width: 30px;
+            top: 0; 
+            left: 10px;
+            padding: 11.5px 0; 
+            font-size: 18px;
+        }
+    }
+    &:hover{
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #fff;
+    }
+    &:focus, &:active, &:visited{
+        outline: none;
+    }
+}

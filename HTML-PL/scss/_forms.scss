@@ -1,0 +1,41 @@
+@import "variables"; 
+
+.form{
+    label{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+        span{
+            display: none;
+        }
+        .error-msg-form{
+            text-align: left;
+            span{
+                display: inline;
+                font-size: 12px;
+                color: $colorError;
+                padding: 3px 15px;                
+            }
+        }
+        input, select, textarea{
+            width: 100%;
+            border: transparent 1px solid;
+            @include border-radius(25px);
+            padding: 11.5px 15px;
+            &:focus, &:active{
+                border-color: #ccc; 
+                outline: none;
+            }
+            &.error-input{
+                border-color: $colorError + 90;
+            }
+        }
+        &.bg-gray{
+            input, select, textarea{
+                background-color: $bgGray1;
+            }
+        }
+    }
+}
+
+
