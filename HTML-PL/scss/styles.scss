@@ -72,3 +72,9 @@ section{
 
 // PL 
 @import "pl";
+
+@media (max-width: 768px){
+    section{
+        padding: 40px 0;
+    }
+}

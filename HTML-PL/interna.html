@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Sou Smile</title>
 		
@@ -27,7 +27,7 @@
                             <h1 class="mbottom-20">compartilhe sorrisos <br> e ganhe presentes</h1>
                             <p>Todo mundo gosta de contar novidades para os amigos, né?</p>
                             <p class="mbottom-40"><strong>Envie seu link exclusivo</strong> para quantas pessoas quiser e receba alguns presentes especiais ao longo do caminho – com direito a uma surpresa no final!</p>
-                            <div class="box-link mtop-20">
+                            <div class="box-link">
                                 https://prelaunch.sousmile.com/meulinkpessoal
                             </div>
                             <ul class="social-box">
@@ -52,20 +52,25 @@
                 <div class="box-earn">
                     <div class="row">
                         <div class="col-xs-12 col-sm-2 text-left"><h3>convidados</h3></div>
-                        <div class="col-xs-3 col-sm-2"><i class="active">5</i></div>
-                        <div class="col-xs-3 col-sm-2"><i class="active">10</i></div>
-                        <div class="col-xs-3 col-sm-2"><i class="active">20</i></div>
-                        <div class="col-xs-3 col-sm-4"><i>40</i></div>
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 visible-xs">
                             <div class="progress">
-                                <span class="bar" style="width: 59%;"></span>
+                                <span class="bar" style="width: 14.7%;"></span>
                             </div>
                         </div>
-                        <div class="col-sm-2 hidden-xs text-left"><h3>presentes</h3></div>
-                        <div class="col-sm-2 hidden-xs">adesivo SouSmile</div>
-                        <div class="col-sm-2 hidden-xs">escova Curaprox</div>
-                        <div class="col-sm-2 hidden-xs">nécessaire SouSmile</div>
-                        <div class="col-sm-4 hidden-xs">
+                        <div class="col-xs-3 col-sm-2"><i target-earn="earn1" class="active">5</i></div>
+                        <div class="col-xs-3 col-sm-2"><i target-earn="earn2" class="active">10</i></div>
+                        <div class="col-xs-3 col-sm-2"><i target-earn="earn3" class="active">20</i></div>
+                        <div class="col-xs-3 col-sm-4"><i target-earn="earn4" class="">40</i></div>
+                        <div class="col-xs-12 hidden-xs">
+                            <div class="progress">
+                                <span class="bar" style="width: 14.7%;"></span>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 hidden-xs text-left"><h3>presentes</h3></div>
+                        <div id="earn1" class="col-sm-2 hidden-xs"><strong>adesivo SouSmile</strong></div>
+                        <div id="earn2" class="col-sm-2 hidden-xs"><strong>escova Curaprox</strong></div>
+                        <div id="earn3" class="col-sm-2 hidden-xs"><strong>nécessaire SouSmile</strong></div>
+                        <div id="earn4" class="col-sm-4 hidden-xs">
                             <strong>embaixador SouSmile</strong> <br>
                             Participe de um ensaio de fotos, seja convidado para os eventos e ganhe uma surpresa incrível.
                         </div>
@@ -76,7 +81,10 @@
             </div>
 		</section>
 
-	</div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 
 </body>

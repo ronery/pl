@@ -170,17 +170,17 @@ body, html{
 			&.int{
 				background-image:  none;
 				.box-content-feature{
+					.ptop-80{
+						padding-top: 0 !important;
+					}
 					p{
 						font-size: 16px;
 						margin-bottom: 20px;
 					}
 					.box-link{
-						margin: auto;
-						padding: 11px 25px;
-						background-color: #fff;
-						@include border-radius(20px);
-						font-weight: bold;
-						display: table;
+						width: 100%;
+						display: inline-block;
+						word-wrap:break-word;
 					}
 					.social-box{
 						display: table;
@@ -202,6 +202,54 @@ body, html{
 				}
 			}
 	
+		}
+
+		// How it works
+		.how-it-works{
+			
+			.box-earn{
+				margin: 30px auto auto;
+				h3{
+					font-size: 24px;
+				}
+				i{
+					// &.line-earn{
+					// 	position: relative;
+					// 	&:after{
+					// 		content: "";
+					// 		display: block;
+					// 		width: 1px;
+					// 		height: 35px;
+					// 		position: absolute;
+					// 		left: 50%;
+					// 		margin-left: -0.5px;
+					// 		background-color: #bfc5c8;
+					// 		z-index: 1;
+					// 	}
+					// }
+					// &.active{
+					// 	&.line-earn{
+					// 		&:after{
+					// 			background-color: #3ec2cf;
+					// 		}
+					// 	}
+					// }
+					&.line-earn{
+						background-color: $red1-pl;
+					}
+				}
+				.text-left{
+					text-align: center !important;
+					margin-bottom: 10px;
+				}
+				#earn1, #earn2, #earn3, #earn4{
+					// border-top: #bfc5c8 1px solid;
+					clear: both;
+					padding: 15px ;
+				}
+
+			}
+
 		}
 	}
 }
